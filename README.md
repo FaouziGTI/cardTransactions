@@ -21,7 +21,7 @@ L'application est configurée pour s'exécuter sur le port 8081 par défaut. Si 
 **Endpoint:** `/api/transactionsFiltred`
 **Méthode:** GET
 
-**Paramètres:**
+**Paramètres Optionnels:**
 - amount
 - merchant
 - status
