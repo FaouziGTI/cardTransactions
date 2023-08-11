@@ -56,10 +56,10 @@ public class TransactionController {
     public List<Transaction> getSortedListByAmount() {
         return transactionService.getSortedListByAmount();
     }
-
-    // Add error handling for invalid filter/sort values
-    /*@ExceptionHandler(MethodArgumentTypeMismatchException.class)
-    public ResponseEntity<String> handleArgumentException(MethodArgumentTypeMismatchException ex) {
-        return ResponseEntity.badRequest().body("Invalid argument: " + ex.getName());
-    }*/
+    
+    
+    @GetMapping("/sortedListByMerchantAndStatus")
+    public List<Transaction> getSortedListByMerchantAndStatus() {
+        return transactionService.getSortedListByMerchantAndStatus();
+    }
 }
