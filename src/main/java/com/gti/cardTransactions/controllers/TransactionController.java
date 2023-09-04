@@ -31,9 +31,7 @@ public class TransactionController {
     public List<Transaction> listTransactionsFiltred(
             @RequestParam(required = false) Double amount,
             @RequestParam(required = false) String merchant,
-            @RequestParam(required = false) String status,
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size
+            @RequestParam(required = false) String status
     ) {
         TransactionFilter filter = new TransactionFilter();
         filter.setAmount(amount);
